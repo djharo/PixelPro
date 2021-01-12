@@ -1,0 +1,45 @@
+<!DOCTTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Probicis</title>
+        <!--Comentario condicional si es menor que ie 9 entonces se llama el script para que pueda interpretar las etiquetad html5 cdn es como se llama a la ruta es un servidor google donde se encuentra el html5.js-->
+        <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    </head>
+    <body>
+        <header>
+              <nav><!-- nav puede ir o no dentro de header-->
+                  <ul> <!-- unorder list (lista desordenada) li es cada uno de los elementos de la lista ya que ul representa un conjunto de elementos que estan vinculados de esta manera toma sentido de conjunto y no enlaces separados (todo esto por semántcia)-->
+                      <li><a href="index.html" title="Inicio">inicio</a></li> <!-- title cuando nos pongamos encima del enlace con el raton aparecerá el nombre del title y el nombre del enlace sera inicio en minuscula -->
+                      <li><a href="#" title="Blog">blog</a></li> <!-- con asterisco no referenciamos a ningun sitio pero cuando nos ponemos encima del enlace se abre un menu nuevo -->
+                      <li><a href="sobre-nosotros.html" title="Sobre nosotros">sobre nosotros</a></li>
+                      <li><a href="contacto.html" title="Contacto">contacto</a></li>
+                  </ul>
+              </nav>      <!-- logo en formato imagen no hay que meterlo en un h1 -->
+        </header><!-- logo & navegación-->
+        <main>
+            <article>
+                <h1>Todo sobre el mundo de las bicicletas</h1>
+                <h2>Montaña</h2>
+                <h2>Carretera</h2>
+            </article><!-- Contenido principal -->
+            <section> <!-- entradas del blog -->
+                <h3>Artículos destacados</h3>
+                <article>
+                    <h3>Rígida o doble</h3>
+                    <p>Es decir, esto con texto, o algo de texto...</p>
+                </article>
+                <article>
+                    <h3>Ciclocross y gravel</h3>
+                    <p>Es decir, esto con texto, o algo de texto...</p>        
+                </article>
+            </section><!-- Artículos destacados -->
+        </main>
+        <aside>
+            <h4>Talla carretera</h4>
+            <h4>Talla montaña</h4>
+        </aside><!-- elige tu talla -->
+        <footer></footer><!-- Plítica de privacidad, otro contacto... -->
+    </body>
+
+</html>
