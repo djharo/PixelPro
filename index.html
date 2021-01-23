@@ -3,28 +3,60 @@
     <head>
         <meta charset="utf-8">
         <title>Probicis</title>
+        <!--Indicamos donde se encuentra nuestra hoja de estilos la etiqueta media no es obligatoria en este caso indicaria que la hoja des estilos es "para la pantall"-->
+        <link rel="stylesheet" href="css/main.css" media="screen">
         <!--Comentario condicional si es menor que ie 9 entonces se llama el script para que pueda interpretar las etiquetad html5 cdn es como se llama a la ruta es un servidor google donde se encuentra el html5.js-->
         <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
     </head>
-    <body>
-        <header>
-              <nav><!-- nav puede ir o no dentro de header-->
-                  <ul> <!-- unorder list (lista desordenada) li es cada uno de los elementos de la lista ya que ul representa un conjunto de elementos que estan vinculados de esta manera toma sentido de conjunto y no enlaces separados (todo esto por semántcia)-->
-                      <li><a href="index.html" title="Inicio">inicio</a></li> <!-- title cuando nos pongamos encima del enlace con el raton aparecerá el nombre del title y el nombre del enlace sera inicio en minuscula -->
-                      <li><a href="#" title="Blog">blog</a></li> <!-- con asterisco no referenciamos a ningun sitio pero cuando nos ponemos encima del enlace se abre un menu nuevo -->
-                      <li><a href="sobre-nosotros.html" title="Sobre nosotros">sobre nosotros</a></li>
-                      <li><a href="contacto.html" title="Contacto">contacto</a></li>
-                  </ul>
+    <body><!-- div carece de valor semantico lo utilizamos para contener dentro un bloque de codigo html y darle un estilo-->
+        <div class="wrapper"> <!--envuelvo mi pagina html bajo una serio de estilos indicandole como se tendra que comportar wrapper es una clase que aparecera en el documento main.css como .wrapper donde estaran definidos los estilos.-->
+        <header class="page-header"><!-- en css las clases se declaran con .nombreDeLaClase y los id como #NombreDelId los ids se definen para un estilo propio que no se vaya a utilizar en mas sitios del html-->
+              <nav><!--  barra de navegacion nav puede ir o no dentro de header--> 
+                <!-- Introducimos nuestro logo id es el identificador para el css que se aplicará al logo en main.css es #logo-->
+                    <img id="logo" src="images/logo.png" alt="logo">
+                <ul> <!-- unorder list (lista desordenada) li es cada uno de los elementos de la lista ya que ul representa un conjunto de elementos que estan vinculados de esta manera toma sentido de conjunto y no enlaces separados (todo esto por semántcia)-->
+                    <li><a href="index.html" title="Inicio">inicio</a></li> <!-- title cuando nos pongamos encima del enlace con el raton aparecerá el nombre del title y el nombre del enlace sera inicio en minuscula -->
+                    <li><a href="#" title="Blog">blog</a></li> <!-- con asterisco no referenciamos a ningun sitio pero cuando nos ponemos encima del enlace se abre un menu nuevo -->
+                    <li><a href="sobre-nosotros.html" title="Sobre nosotros">sobre nosotros</a></li>
+                    <li><a href="contacto.html" title="Contacto">contacto</a></li>
+                </ul>
+                <button class="bt-acceso">acceso</button>
               </nav>      <!-- logo en formato imagen no hay que meterlo en un h1 -->
         </header><!-- logo & navegación-->
+        <article class="page-jumbo"><!-- En esta clase css se hace uso de la imagen portada-->
+            <div>
+                <h1>¡Únete a nuestro club ciclista!</h1>
+                    <p>Descubre nueva rutas y paisajes de la mano de bicipro</p>
+                        <p>Soomos un grupo apasionado dispuesto a compartir nuestros conocimientos con todos los amantes de las dos ruedas.</p>
+                            <p>¡Te esperamos!.</p>
+            </div>
+        </article>
         <main>
-            <article>
-                <h1>Todo sobre el mundo de las bicicletas</h1>
-                <h2>Montaña</h2>
-                <h2>Carretera</h2>
+            <article><!-- Contenido principal -->
+                <header class="center">
+                    <h1>Todo sobre el mundo de las bicicletas</h1>
+                        <p>Texto de intro...</p>
+                </header>
+                    <div class="row"><!-- Primero se encierra todo en una fila y luego una columna para cada h2 esto se esta haciendo con Flexboox-->
+                        <div class="column">       
+                            <h2>Montaña</h2>
+                                <img src="images/bicicleta-montana.jpg" alt="bicicleta montaña"> <!-- Los dos atributos de la etiqueta son obligatorios uno indica donde se encuentra la imagen y el otro no da una pequeña descripción de lo que contiene la imagen cuando dejamos el cursor encima de ella o no se encuentra la imagen y no se muestra en la página-->
+                                    <p>Texto de intro...</p>
+                                        <button class="bt-viewmore">Ver más</button>
+                        </div>
+                        <div class="column">             
+                            <h2>Carretera</h2>
+                                <img src="images/bicicleta-carretera.jpg" alt="biciclet carretera"><!-- Otra etiqueta relacionada con las imágenes es <figure> si queremos hacer referencia a un conjunto de imagennes o un gráfico que encontremos por internet...-->
+                                    <p>Texto de intro...</p>
+                                        <button class="bt-viewmore">Ver más</button>
+                        </div>        
+                    </div>             
             </article><!-- Contenido principal -->
             <section> <!-- entradas del blog -->
-                <h3>Artículos destacados</h3>
+                <header>
+                    <h3>Artículos destacados del blog</h3>
+                        <p>Encuentra en nuestro blog toda la info...</p>
+                </header>
                 <article>
                     <h3>Rígida o doble</h3>
                     <p>Es decir, esto con texto, o algo de texto...</p>
@@ -40,6 +72,6 @@
             <h4>Talla montaña</h4>
         </aside><!-- elige tu talla -->
         <footer></footer><!-- Plítica de privacidad, otro contacto... -->
+    </div>
     </body>
-
 </html>

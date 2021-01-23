@@ -1,2 +1,0 @@
-w3c para información sobre html5
-https://www.w3schools.com/tags/ para documentacion de como usar los diferentes tags en html5(etiquetas html5)
