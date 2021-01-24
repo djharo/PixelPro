@@ -53,18 +53,45 @@
                     </div>             
             </article><!-- Contenido principal -->
             <section> <!-- entradas del blog -->
-                <header>
+                <header class="center">
                     <h3>Artículos destacados del blog</h3>
                         <p>Encuentra en nuestro blog toda la info...</p>
                 </header>
-                <article>
-                    <h3>Rígida o doble</h3>
-                    <p>Es decir, esto con texto, o algo de texto...</p>
-                </article>
-                <article>
-                    <h3>Ciclocross y gravel</h3>
-                    <p>Es decir, esto con texto, o algo de texto...</p>        
-                </article>
+                <div class="row">
+                    <div class="column"> 
+                    <article>
+                        <div class="card"><!--https://www.w3schools.com/howto/howto_css_cards.asp-->
+                            <img src="images/btt.jpg" alt="btt" style="width:100%"><!-- La imagenes hay que adaptarlas lo suyo es que no ocupen mas de 500kb una pagina para adaptarlas podria ser https://www.photopea.com/-->
+                            <div class="container">
+                                <h4>Rígida o doble</h4>
+                                <p>Rendimiento o comodidad, la elección es dura.</p>
+                            </div>
+                        </div>    
+                    </article>
+                    </div>
+                    <div class="column">
+                    <article><!-- Se podrá hacer algo asi <article class="column card"> anidacion de clases css y me ahorraría etiquetas div tendria que hacerlo en todos los articulos.-->
+                        <div class="card">
+                            <img src="images/ciclovsgravel.jpg" alt="ciclogravel" style="width:100%"><!-- El stilo debería de ir en el css-->
+                            <div class="container">
+                                <h4>Ciclocross y gravel</h4>
+                                <p>Las diferencias son muy sutiles pero están...</p>
+                            </div>
+                        </div>            
+                    </article>
+                    </div>
+                    <div class="column"> 
+                    <article>
+                        <div class="card">
+                            <img src="images/fatbike.jpg" alt="fatbike" style="width:100%">
+                            <div class="container">
+                                <h4>Fat Bikes</h4>
+                                <p>Es decir, es es ¿una bici? A mi no me lo parece.</p>
+                            </div>    
+                        </div>             
+                    </article>
+                    </div> 
+                </div>
             </section><!-- Artículos destacados -->
         </main>
         <aside>
