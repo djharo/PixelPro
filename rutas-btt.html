@@ -25,12 +25,12 @@
                     <em>En este sitio, tiene preferencia el caminante siempre.</em>
                 </p>
                 
-                <div vocab="http://schema.org/" class="event-wrapper event" typeof="Event">
+                <div vocab="http://schema.org/" class="event-wrapper event" typeof="Event"><!-- Evento estructurado http://schema.org/" comienzo de los datos estructurados-->
                     <div class="event-date" property="startDate" content="2021-04-30T09:30">El 30 de Abril 2021</div><!--date time <time datatime=2021-04-30>El 30 de abril de 2021</time>-->
                     <div class="event-title" property="name">Salida BTT Cantos Rodados</div>
                     <div class="event-venue" property="location" typeof="Place">
                       <span property="name">La Pedriza</span>
-                      <div class="address" property="address" typeof="PostalAddress">
+                      <div class="address" property="address" typeof="PostalAddress"> <!-- Si se anidan typeof de datos estructurados dentro del div principal donde se encuentra vocab no es necesario volver a poner "http://schema.org/"-->
                         <span property="streetAddress">Av. de la Pedriza</span><br>
                         <span property="addressLocality">Manzanares el real</span>,
                         <span property="addressRegion">MAD</span>
@@ -45,7 +45,7 @@
                    </div>
                    <a property="url" href="http://www.ticketfly.com/purchase/309433">Comprar Tickets</a>
                    </span>
-                  </div>                
+                </div>                
 
                 <footer class="blog-footer">
                 <img src="images/guide-guillermo.jpg" class="roundimg" alt="foto del guillermo">

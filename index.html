@@ -11,7 +11,7 @@
     <body><!-- div carece de valor semantico lo utilizamos para contener dentro un bloque de codigo html y darle un estilo-->
         <div class="wrapper"> <!--envuelvo mi pagina html bajo una serio de estilos indicandole como se tendra que comportar wrapper es una clase que aparecera en el documento main.css como .wrapper donde estaran definidos los estilos.-->
         <header class="page-header"><!-- en css las clases se declaran con .nombreDeLaClase y los id como #NombreDelId los ids se definen para un estilo propio que no se vaya a utilizar en mas sitios del html-->
-              <nav><!--  barra de navegacion nav puede ir o no dentro de header--> 
+              <nav role="navigation"><!--  barra de navegacion nav puede ir o no dentro de header--> 
                 <!-- Introducimos nuestro logo id es el identificador para el css que se aplicará al logo en main.css es #logo-->
                     <img id="logo" src="images/logo.png" alt="logo">
                 <ul> <!-- unorder list (lista desordenada) li es cada uno de los elementos de la lista ya que ul representa un conjunto de elementos que estan vinculados de esta manera toma sentido de conjunto y no enlaces separados (todo esto por semántcia)-->
@@ -31,8 +31,8 @@
                             <p>¡Te esperamos!.</p>
             </div>
         </article>
-        <main>
-            <article><!-- Contenido principal -->
+        <main role="main">
+            <article role="article"><!-- Contenido principal -->
                 <header class="center">
                     <h1>Todo sobre el mundo de las bicicletas</h1>
                         <p>Texto de intro...</p>
@@ -59,7 +59,7 @@
                 </header>
                 <div class="row">
                     <div class="column"> 
-                    <article>
+                    <article role="article">
                         <div class="card"><!--https://www.w3schools.com/howto/howto_css_cards.asp-->
                             <img src="images/btt.jpg" alt="btt" style="width:100%"><!-- La imagenes hay que adaptarlas lo suyo es que no ocupen mas de 500kb una pagina para adaptarlas podria ser https://www.photopea.com/-->
                             <div class="container">
@@ -70,7 +70,7 @@
                     </article>
                     </div>
                     <div class="column">
-                    <article><!-- Se podrá hacer algo asi <article class="column card"> anidacion de clases css y me ahorraría etiquetas div tendria que hacerlo en todos los articulos.-->
+                    <article role="article"><!-- Se podrá hacer algo asi <article class="column card"> anidacion de clases css y me ahorraría etiquetas div tendria que hacerlo en todos los articulos.-->
                         <div class="card">
                             <img src="images/ciclovsgravel.jpg" alt="ciclogravel" style="width:100%"><!-- El stilo debería de ir en el css-->
                             <div class="container">
@@ -81,7 +81,7 @@
                     </article>
                     </div>
                     <div class="column"> 
-                    <article>
+                    <article role="article">
                         <div class="card">
                             <img src="images/fatbike.jpg" alt="fatbike" style="width:100%">
                             <div class="container">
