@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Todo sobre el mundo de las bicis.">
+        <meta name="author" content="David Piqué">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Probicis</title>
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    </head>
+    <body>
+        <div class="wrapper">
+        <header class="page-header">
+            <nav role="navigation">
+                <img id="logo" src="images/logo.png" alt="logo">
+                <ul>
+                   <li><a href="index.html" title="Inicio">portada</a></li>
+                    <li><a href="#" title="Blog">blog</a></li>
+                    <li><a href="sobre-nosotros.html" title="Sobre nosotros">sobre nosotros</a></li>   
+                    <li><a href="contacto.html" title="Contacto">contacto</a></li>   
+                </ul>
+                <button class="bt-acceso">acceso</button>
+            </nav>    
+        </header><!-- logo & navegación -->
+        <article class="page-contact-banner" role="article"><!-- texto bienvenida -->
+            <div>
+                <h1>Contacta con nosotros</h1>
+                  <p>Descubre nuevas rutas y paisajes de la mano de bicipro. </p>
+                    <p>Somo sun grupo de apasionados dispuestos a compartir nuestros conocimientos con todos los amantes de las dos ruedas.</p>
+                  <p>¡Te esperamos!.</p>
+            </div>
+        </article> 
+        <main role="main">
+                <header class="center">
+                        <h3>Formulario de contacto</h3>
+                            <p>Estamos encantados de tener noticias tuyas</p>
+                    </header>
+                    
+            <div class="row">
+                <div class="column">
+                    <!-- Formulario de contacto -->
+            <form action="action.php">
+                    
+                <label for="fname">Nombre</label>
+                <input type="text" id="name" name="firstname" placeholder="Su nombre">
+                    
+                <label for="lname">Apellidos</label>
+                <input type="text" id="lname" name="lastname" placeholder="Sus apellidos">
+                    
+                <label for="category">Categoria</label>
+                <select id="category" name="category">
+                    <option value="xc">XC</option>
+                    <option value="carretera">Carretera</option>
+                    <option value="enduro">Enduro</option>
+                </select>
+                    
+                <label for="subject">Asunto</label>
+                <textarea id="subject" name="subject" placeholder="Te escuchamos" style="height:200px"></textarea>
+                    
+                <input type="submit" value="Enviar">     
+            </form>
+                </div>
+                <div class="column">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24186.718132875187!2d-3.882964650112816!3d40.732548690598605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd417b2ac80796a1%3A0x261559df15701e54!2s28410%20Manzanares%20el%20Real%2C%20Madrid!5e0!3m2!1ses!2ses!4v1587652185326!5m2!1ses!2ses" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            
+           
+        </main>
+        
+        <footer class="page-footer center" role="contentinfo">
+            <div class="page-footer-container">
+                <small>Información sobre nuestra <a href="politica-privacidad.html">política de privacidad</a>
+                </small><br>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <p>Creado por: <a href="mailto:info@pixelpro.es">David Piqué</a> Teléfono de contacto: <a href="tel:918463954">91 846 39 54</a>.</p>
+                <p>Calle Ronda de Segovia 50, Madrid, CP: 28009</p>
+            </div>
+        </footer><!-- Política de privacidad, otro contacto... -->
+        </div>
+    </body>
+
+</html>

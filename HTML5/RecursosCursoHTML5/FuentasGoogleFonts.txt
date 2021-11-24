@@ -1,0 +1,5 @@
+En nuestro archivo main.css se hace uso del siguiente import
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+este import es una llamada a un cdn servidor de en este caso de google donde se encontraran las fuentes que queramos utilizar en este caso la de tipo
+Lato con los pesos 300,400y700 desde la pagina podemos descargarlas para guardarlas en nuetro local como las imagens crear un link o importarlas como
+como es nuestro caso.

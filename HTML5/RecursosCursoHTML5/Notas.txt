@@ -1,0 +1,9 @@
+w3c para información sobre html5
+https://www.w3schools.com/tags/ para documentacion de como usar los diferentes tags en html5(etiquetas html5)
+Información sobre tags
+https://www.w3schools.com/tags/
+https://www.w3schools.com/tags/tag_div.asp
+Como realizar cards
+https://www.w3schools.com/howto/howto_css_cards.asp
+Como ajustar imagenes
+https://www.photopea.com/

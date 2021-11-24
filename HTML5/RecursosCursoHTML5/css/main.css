@@ -3,7 +3,7 @@
 
 :root {
   --main-white-color: #fff;
-  --main-grey-color: #ccccccc0;
+  --main-grey-color: #f2f2f2;
   --main-black-color: black;
   --main-green-color: #00CDAF;
   --main-blue-color: #128ef2;
@@ -44,17 +44,17 @@ header h2 {
     font-size: 3em;
     font-weight: 600;
 }
-main { /*Color de fondo para el codigo encerrado en la etiqueta main ademas se define el color como una variable*/
+main {
   background-color: var(--main-grey-color);
 }
-main p {/*Tamaño de la fuento y relleno para los parrafos encerrados en la etiqueta main*/
+main p {
   font-size: 0.9em;
   padding:  1em 0;
 }
 .center {
   text-align: center;
 }
-h1{/*Tamaño de fuente para h1 igual para h2 y h3*/
+h1{
   font-size: 2em;
 }
 h2{
@@ -64,7 +64,7 @@ h3{
   font-size: 1.3em;
 }
 
-.roundimg {/*.nombre define una clase que se podrá utilizar en varias partes del documento en html se hará referencia esta clase como div class="roundimg"*/
+.roundimg {
   width:80px;
   height:80px;
   border-radius:40px;
@@ -83,7 +83,7 @@ h3{
   color: var(--main-green-color);
  }
 
-cite{/*Color para la etitqueta cite definido como una variable*/
+cite{
     color: var(--main-green-color);
 }
 
@@ -174,7 +174,7 @@ cite{/*Color para la etitqueta cite definido como una variable*/
 
 }
 
-#logo {/*# indica que el elemento es unico en html se hara referencia a este elelmento csss con id="logo"*/
+#logo {
     height: 100px;
 }
 
@@ -401,7 +401,7 @@ dl p{
 }
 
 /* Flexbox */
-.row {/*Ver curso de Flexbox*/
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
