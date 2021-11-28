@@ -37,8 +37,8 @@ if(correctas === 5){
     document.write("<p>Su nota es Suspenso</p>");
 }
 
-if('perro' == 'gato'){
+/*if('perro' == 'gato'){
     console.log(true);
 }else {
     console.log(false);
-}
+}*/
