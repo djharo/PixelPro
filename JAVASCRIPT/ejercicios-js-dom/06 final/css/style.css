@@ -1,0 +1,19 @@
+body {
+	font-family: sans-serif;
+}
+p {
+	color: blue;
+}
+.pixel {
+	color: darkblue;
+}
+.marcado {
+	color: lightblue;
+}
+.up {
+	background-color:  lightgreen;
+	margin: 2px;
+}
+.down {
+	background-color: lightblue;
+}
