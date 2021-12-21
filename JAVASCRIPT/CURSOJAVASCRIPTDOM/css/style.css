@@ -7,3 +7,10 @@ h1{
 p{
     color:blue;
 }
+
+.pixel{
+    color:red;
+}
+
+/* Los identificadores de las clases class = a lo que sea en css se pone .idenificador
+para darle un estilo*/
