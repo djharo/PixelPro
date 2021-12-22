@@ -44,4 +44,58 @@ function clearAlert(){
     window.clearTimeout(timeoutID);
 }
 
-                    
+//Eventos mouseover y mouseout
+
+//const LIST_ITEM = document.getElementsByTagName('li')[0]; obtendria el primer elemento de la lista.
+const LIST_ITEM = document.getElementsByTagName('li');
+
+/*
+for(let i = 0; i< LIST_ITEM.length; i++){
+    //Cuando ponga el cursor sobre un elemento de la lista se pondra en mayuscula
+    LIST_ITEM[i].addEventListener('mouseover', () => {
+        LIST_ITEM[i].textContent = LIST_ITEM[i].textContent.toUpperCase();
+    });
+    //Cuando quite el cursor del elemento de la lista se pondra en minuscula.
+    LIST_ITEM[i].addEventListener('mouseout', () => {
+        LIST_ITEM[i].textContent = LIST_ITEM[i].textContent.toLowerCase();
+    });
+}
+*/
+
+//**Nota con este procedimiento los elementos que se añadan a la lista con el boton Añade un lenguaje
+//NO  recibiran el evento y no se pondran ni en mayuscula ni en minuscula*/
+
+//Otra forma de hacer lo anterior es coger el elemento anterior mas cercano a li en este caso ul peero
+//como tenemos un div que engloba al ul trabajaremos con el aprovechando ademas la definicion que tenemos
+
+const LIST = document.querySelector('.list');//los identificadores de las calses class se ponen con puntos
+
+/*
+LIST.addEventListener('mouseover', () => {
+    LIST_ITEM[i].textContent = LIST_ITEM[i].textContent.toUpperCase();
+});
+
+LIST.addEventListener('mouseout', () => {
+    LIST_ITEM[i].textContent = LIST_ITEM[i].textContent.toLowerCase();
+});
+*/
+
+//¿Como sabe el padre en este caso cual es el hijo que dispara el evento?
+
+//HANDLER para manipular el evento
+/*document.addEventListener('click', (event) =>{//Podremos ver en consola los elementos en los que hagamos click con el raton.
+    console.log(event.target);
+})*/
+
+
+LIST.addEventListener('mouseover', (event) => {
+    if(event.target.tagName === 'LI'){//tagName devuelve el elemento en mayusculas si selecciono un elemento de la lista li devolvera LI
+        event.target.textContent = event.target.textContent.toUpperCase();
+    }
+});
+
+LIST.addEventListener('mouseout', (event) => {
+    if(event.target.tagName === 'LI'){
+        event.target.textContent = event.target.textContent.toLowerCase();
+    }    
+});

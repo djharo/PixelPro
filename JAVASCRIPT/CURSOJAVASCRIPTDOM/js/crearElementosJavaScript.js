@@ -10,6 +10,7 @@ ADD_ITEM_BUTTON.addEventListener('click', () => {
         alert("Debe escribir un lenguaje")
     }else{
         li.textContent = ADD_ITEM_INPUT.value;
+        agregarBotonesLista(li)
         ul.appendChild(li);
     }
 

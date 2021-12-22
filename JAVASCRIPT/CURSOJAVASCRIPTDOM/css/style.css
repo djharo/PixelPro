@@ -11,6 +11,18 @@ p{
 .pixel{
     color:red;
 }
+.up{
+    background-color:greenyellow;
+    margin: 2px;
+}
+.borrar{
+    background-color:royalblue;
+    margin: 2px;
+}
+.down{
+    background-color:lightblue;
+    margin: 2px;
+}
 
 /* Los identificadores de las clases class = a lo que sea en css se pone .idenificador
 para darle un estilo*/
