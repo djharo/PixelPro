@@ -1,3 +1,28 @@
+/*Let*/
+//Variable de alcance local con ambito de bloque no se puede definir otra variable con el mismo nombre dentro del bloque
+
+function validar(nombre){
+    if(nombre === "Diego"){
+        let apellido = "de Haro";//var apellido = "Martinez"
+        let apellidoDos = "Martínez"//var apellido = "García" si hago esto tomara como apellido García por eso el uso de let y asi no puedo poner el mismo nombre de variable
+        console.log(`${nombre} ${apellido} ${apellidoDos}`);
+    }else{
+        console.log("No eres Diego")
+    }
+}
+validar("Diego");
+validar("Paco");
+
+/*Const*/
+//Constantes no se pueden modificar ni crear otra variable del tipo que sea con el mismo nombre.
+const ANYO_NACIMIENTO = 1983;
+//SI ANYO_NACIMIENTO la declaro como un var podria pasar lo siguiente
+//var ANYO_NACIMIENTO = 2021
+
+var anyoActual = new Date().getFullYear();
+var edad = anyoActual - ANYO_NACIMIENTO; //SI ANYO_NACIMIENTO la declaro como un var podria pasar lo siguiente aqui ANYO_NACIMIENTO tomaria el valor de 2021 y la resta seria 0.(cuando hice este ejemplo)
+console.log(edad);
+
 /*Templates (plantillas de cadena de texto)*/
 function saludo(nombre){
     console.log("Hola " + nombre);
