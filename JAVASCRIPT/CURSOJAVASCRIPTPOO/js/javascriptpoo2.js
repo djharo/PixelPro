@@ -30,6 +30,26 @@ class Tutores{
         this.perfil = perfil;
     };
 
+    get accion(){
+        const hoy = new Date();
+        const horas = hoy.getHours();
+
+        if(horas > 9 && horas <= 18){
+            return "Trabajando";
+        }else{
+            return "Descansando";
+        }
+    }
+
+    set experiencia(experiencia){
+        this._experiencia = experiencia;//_experiencia es el valor que voy a manejar en el ambito que sera igual al valor de experiencia que viene desde fuera(es decir el pasado por parametro); 
+        console.log(`El setter de exp es ${experiencia}`);
+    }
+
+    get experiencia(){
+        return this._experiencia;
+    }
+
     saludo(){
         console.log("Hola soy un " + this.perfil);
     };
@@ -44,4 +64,8 @@ console.log(diego);
 //Para ejecutar el método
 diego.saludo();//ojo los parentesis si es una funcion.
 
-//Getters(TODO)
+//Getters
+console.log(diego.accion);
+
+diego.experiencia = "Senior";
+console.log(diego.experiencia);//Esoto solo si tengo el get experiencia si no me devuelve un undefined
