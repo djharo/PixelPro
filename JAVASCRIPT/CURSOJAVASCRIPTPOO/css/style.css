@@ -4,11 +4,11 @@ h1{
     color: white;
     text-align: center;
 }
-p{
+p{/*Las etiquetas p que no tengan el identificador class = "pixel" se mostraran en azul*/
     color:blue;
 }
 
-.pixel{
+.pixel{/*Las etiquetas que tengan el identificador class = "pixel" se mostraran en rojo*/
     color:red;
 }
 .up{

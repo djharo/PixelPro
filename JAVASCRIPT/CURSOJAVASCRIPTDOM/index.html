@@ -11,21 +11,31 @@
   <h1 id = "titulo">Curso de Javascript</h1>
   <p class = "pixel">Estoy aprendiendo en PixelPro</p>
   <hr/><!--Raya horizontal no es necesario etiqueta de cierres-->
-  <input type="text" class = "pixel"> <!-- input contiene dos atributos cada uno con diferentes valores-->
-  <button class = "pixel">Cambia el valor del encabezado</button>
-  <!--<input type="text" id = "myinput">
-  <button id = "miboton">Cambia el encabezado de color</button>-->
-  <ul>
-    <li>PHP</li>
-    <li class="marcado">HTML</li>
-    <li>Java</li>
-    <li class="marcado">XML</li>
-    <li>Javascript</li>
-    <li class="marcado">CSS</li>
-    <li>Ruby</li>
-  </ul>
-  <P>Son lenguajes de programación</P>
-  <p class="marcado">Son lenguajes de marcado</p>
-  <script src = "js/appDomSeccion4.js"></script>
+  <button id = "toggleList">Oculta el contenido</button>
+    <div class = "list">
+      <!--<input type="text" id = "myinput">
+      <button id = "miboton">Cambia el encabezado de color</button>-->
+      <ul>
+        <li>php<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li class="marcado">html<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li>java<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li class="marcado">xml<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li>javascript<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li class="marcado">css<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+        <li>ruby<!--<button class="up">Subir</button><button class="down">Bajar</button><button class="borrar">Borrar</button>--></li>
+      </ul>
+      <input type="text" class = "addItemInput"> <!-- input contiene dos atributos cada uno con diferentes valores-->
+      <button class = "addItemButton">Añade un lenguaje</button>
+      <button class = "removeItemButton">Elimina un lenguaje</button>
+      <P>Son lenguajes de programación</P>
+      <p class="marcado">Son lenguajes de marcado</p>
+
+      <!-- Cuando se pinche con el raton en el boton Muestra una ... se lanzará la funcion delayedAlert-->
+      <button onclick="delayedAlert()">Muestra una alerta en 5 segundos</button>
+      <!-- Cuando se pinche con el raton en el boton Cancela el ... se lanzará la funcion clearAlert-->
+      <button onclick="clearAlert()">Cancela el Alert</button>
+    </div>
+  <!-- <script src = "js/crearElementosJavaScript.js"></script>-->
+  <script src = "js/seccion7.js"></script>
 </body>
 </html>
